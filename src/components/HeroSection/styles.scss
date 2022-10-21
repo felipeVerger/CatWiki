@@ -1,0 +1,85 @@
+.hero-container {
+    background-image: url(../../assets/HeroImagelg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 538px;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .hero-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 6rem;
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .logo {
+                color: var(--white-color);
+                font-family: var(--font-title);
+                font-weight: 400;
+                font-size: 64px;
+            }
+            img {
+                width: 81px;
+                height: 65px;
+            }
+        }
+
+        p {
+            color: var(--white-color);
+            font-family: var(--font-base);
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        .input-section {
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+
+            .select {
+                width: 300px;
+                height: 69px;
+                border: none;
+                border-radius: 59px 0 0 59px;
+                outline: none;
+                text-indent: 20px;    
+                font-family: var(--font-base);
+                font-weight: 500;
+                font-size: 18px;     
+                color: var(--primary-color); 
+                
+                &::placeholder {
+                    color: var(--primary-color);
+                }
+            }
+
+            .submit-button {
+                width: 70px;
+                height: 69px;
+                border: none;
+                border-radius: 0 59px 59px 0;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,29 @@
+.levels {
+    display: flex;
+    gap: 1rem;
+
+    span {
+        width: 60px;
+        height: 12px;
+        border-radius: 8px;
+    }
+    span.painted {
+        background-color:  #544439;
+    }
+    span.not-painted {
+        background-color: #E0E0E0;
+    }
+}
+
+.features-container {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+}

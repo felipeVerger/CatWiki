@@ -1,0 +1,64 @@
+.discover-container {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    min-height: 538px;
+    border-radius: 0 0 40px 40px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+
+    .discover-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem 6rem 2rem;
+
+        .search-breed-button {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 18px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .discover-title-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            h2 {
+                font-weight: 700;
+                font-size: 48px;
+                color: var(--primary-color);
+
+                br {
+                    @media screen and (max-width: 990px){
+                        display: none;
+                    }
+                }
+            }
+            div {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .btn-link {
+                    text-decoration: none;
+                    color: rgba(41, 21, 7, 0.6);;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                svg {
+                    color: rgba(41, 21, 7, 0.6);
+                    margin-left: 5px;
+                }
+                @media screen and (max-width: 990px){
+                    display: none;
+                }
+            }
+        }
+    }
+}
